@@ -1,14 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title><%= full_title(yield(:title)) %></title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
+  <head>
+  <style>
+  div.ex1 {margin-top:4cm;}
+  </style>
+    <title><%= full_title(yield(:title)) %></title>
+    <%= stylesheet_link_tag "application", media: "all",
+                                           "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+    <%= render 'layouts/shim' %>
+  </head>
+  <body>
+   <%= render 'layouts/header' %>
+   <section id="main"> <!-- uniquify the child container to create the top margin -->
+    <div class="container"> <!-- outermost twitter bootstrap container-->
+     <div class="row">
+       <div class="span3 ex1">
+         <div class="btn-group btn-group-vertical">
+            <button type="button" class="btn btn-default">One</button>
+            <button type="button" class="btn btn-default">One</button>
+            <button type="button" class="btn btn-default">One</button>
+            <button type="button" class="btn btn-default">One</button>
+         </div>
+       </div>
+       <div class="span7 offset2 ex1"><%= yield %></div>
+     </div>
+     <div class="row">
+       <div class="span4 offset2"><%= render 'layouts/footer' %></div>
+       <div class="span4"><%= render 'layouts/footer2' %></div>
+     </div>
+    </div>
+</section>
+<!--this is where the gmaps scripts are added-->
+<%= yield :scripts %>
 </body>
 </html>
