@@ -1,16 +1,15 @@
 <header>
-   <div class="container">
-      <nav class="navbar navbar-inner navbar-default navbar-static-top" role="navigation">
-    <%= link_to image_tag("iap_smartvending_logo.gif", :size =>"347x56", id: "logo", alt:"Smart Vending"), root_path %>
-        <p </p>
-        <p class="nav pull-right">
-          <%= link_to "Home",    root_path %>
-          <%= link_to "Profile",    '#' %>
-          <%= link_to "Help",    '#' %>
-          <%= link_to "Sign in", '#' %>
-        </p>
-      </nav>
-   </div>
+  <div class="container">    
+    <div class="navbar navbar-fluid-top navbar-inner container-fluid">
+          <a class="brand" href=<%= root_path %>><img src="/assets/iap_smartvending_logo.gif"></a>
+          <div class="container-fluid nav-collapse">
+            <ul class="nav pull-right">
+              <li><%= link_to "Profile", "/path2", :class => "btn" %></li>
+              <li><%= link_to "Help", help_path, :class => "btn "  %></li>
+              <li><%= link_to glyph(:remove), '#', :class => "btn btn-danger" %></li>
+              <li><%= link_to "Sign In", "/path3", :class => "btn "  %></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+    </div>
+  </div>
 </header>
-
-
