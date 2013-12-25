@@ -13,17 +13,21 @@
     <div class="container-fluid">
 <div class="container-fluid">
     <div class="row-fluid">
-            <div class="span3">
+            <div class="span2">
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
               <li class="nav-header">Sidebar</li>
-              <li><%= link_to "Link1", "/path1"  %></li>
-              <li><%= link_to "Link2", "/path2"  %></li>
-              <li><%= link_to "Link3", "/path3"  %></li>
+              <li><%= link_to(root_path, :class => 'btn') do %><i class="fa fa-home fa-fw"> </i>  Home<% end %></li>
+              <li><p> </p></li>
+              <li><%= link_to(machines_path, :class => 'btn') do %><i class="fa fa-sitemap fa-fw"> </i> Machines<% end %></li>
+              <li><p> </p></li>
+              <li><%= link_to(root_path, :class => 'btn') do %><i class="fa fa-bell fa-fw"> </i> Alarms<% end %></li>
+              <li><p> </p></li>
+              <li><%= link_to(root_path, :class => 'btn') do %><i class="fa fa-users fa-fw"> </i> Customers<% end %></li>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
-        <div class="span9">
+        <div class="span10">
           <%= bootstrap_flash %>
           <%= yield %>
         </div>
@@ -32,6 +36,8 @@
     </div>
     <div class="row-fluid">
         <div class="span12">
+           <div class="page-header">
+           </div>
         </div>
     </div>
     <div class="row-fluid">
