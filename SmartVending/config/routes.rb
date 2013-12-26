@@ -1,4 +1,6 @@
 SmartVending::Application.routes.draw do
+  resources :alarms
+
   resources :customers
 
   root  'static_pages#home'

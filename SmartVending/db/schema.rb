@@ -11,7 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131226110729) do
+ActiveRecord::Schema.define(version: 20131226145554) do
+
+  create_table "alarms", force: true do |t|
+    t.integer  "extID"
+    t.string   "status"
+    t.string   "severity"
+    t.datetime "date"
+    t.string   "object"
+    t.string   "category"
+    t.string   "tipe"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "customers", force: true do |t|
     t.string   "name"

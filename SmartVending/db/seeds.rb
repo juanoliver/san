@@ -15,4 +15,10 @@ open("db/customers.csv") do |customers|
   end
 end
 
-
+Alarm.delete_all
+open("db/alarms.csv") do |alarms|
+  alarms.read.each_line do |alarm|
+    id , status, severity, date, object, category, type = alarm.chomp.split(";")
+    Alarm.create!(:extID => id, :status => status , :severity => severity, :date => date, :object => object,  :category => category, :tipe => type)
+  end
+end
