@@ -22,3 +22,12 @@ open("db/alarms.csv") do |alarms|
     Alarm.create!(:extID => id, :status => status , :severity => severity, :date => date, :object => object,  :category => category, :tipe => type)
   end
 end
+
+Machine.delete_all
+open("db/machines.csv") do |machines|
+  machines.read.each_line do |machine|
+    id , name, description, category, status  = machine.chomp.split(";")
+    Machine.create!(:extID => id, :name => name, :description => description, :status => status,  :category => category)
+  end
+end
+

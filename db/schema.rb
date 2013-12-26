@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131226170409) do
+ActiveRecord::Schema.define(version: 20131226212505) do
 
   create_table "alarms", force: true do |t|
     t.integer  "extID"
@@ -29,6 +29,16 @@ ActiveRecord::Schema.define(version: 20131226170409) do
     t.string   "name"
     t.decimal  "account_balance"
     t.string   "phone"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "machines", force: true do |t|
+    t.integer  "extID"
+    t.string   "name"
+    t.string   "description"
+    t.string   "category"
+    t.string   "status"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
