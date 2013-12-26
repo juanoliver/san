@@ -10,4 +10,7 @@ class StaticPagesController < ApplicationController
 
   def machines
   end
+  
+  def grid
+  end
 end
