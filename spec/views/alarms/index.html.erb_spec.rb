@@ -9,7 +9,7 @@ describe "alarms/index" do
         :severity => "Severity",
         :object => "Object",
         :category => "Category",
-        :type => "Type"
+        :tipe => "Type"
       ),
       stub_model(Alarm,
         :extID => 1,
@@ -17,7 +17,7 @@ describe "alarms/index" do
         :severity => "Severity",
         :object => "Object",
         :category => "Category",
-        :type => "Type"
+        :tipe => "Type"
       )
     ])
   end

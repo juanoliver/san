@@ -8,7 +8,7 @@ describe "alarms/show" do
       :severity => "Severity",
       :object => "Object",
       :category => "Category",
-      :type => "Type"
+      :tipe => "Type"
     ))
   end
 

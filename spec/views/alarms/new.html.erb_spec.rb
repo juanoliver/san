@@ -8,7 +8,7 @@ describe "alarms/new" do
       :severity => "MyString",
       :object => "MyString",
       :category => "MyString",
-      :type => ""
+      :tipe => ""
     ).as_new_record)
   end
 
@@ -22,7 +22,7 @@ describe "alarms/new" do
       assert_select "input#alarm_severity[name=?]", "alarm[severity]"
       assert_select "input#alarm_object[name=?]", "alarm[object]"
       assert_select "input#alarm_category[name=?]", "alarm[category]"
-      assert_select "input#alarm_type[name=?]", "alarm[type]"
+      assert_select "input#alarm_tipe[name=?]", "alarm[tipe]"
     end
   end
 end
