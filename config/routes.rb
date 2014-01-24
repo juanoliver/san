@@ -1,4 +1,12 @@
 SmartVending::Application.routes.draw do
+  #devise_for :users
+  devise_for :users, :skip => [:registrations]                                          
+    as :user do
+      get 'users/edit' => 'devise/registrations#edit', :as => 'edit_user_registration'    
+      put 'users/:id' => 'devise/registrations#update', :as => 'user_registration'            
+      delete 'users/:id' => 'devise/registrations#destroy', :as => 'user_destroy_registration'            
+    end
+#  devise_for :users do get '/users/sign_out' => 'devise/sessions#destroy' end
   resources :machines
 
   resources :alarms
@@ -6,6 +14,7 @@ SmartVending::Application.routes.draw do
   resources :customers
 
   root  'static_pages#home'
+#  root  :to => "home#index"
   match '/help',    to: 'static_pages#help',    via: 'get'
   match '/about',   to: 'static_pages#about',   via: 'get'
   match '/contact', to: 'static_pages#contact', via: 'get'  

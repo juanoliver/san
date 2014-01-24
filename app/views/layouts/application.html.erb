@@ -10,45 +10,50 @@
   </head>
   <body>
     <%= render 'layouts/header' %>  
-    <div class="container-fluid">
-<div class="container-fluid">
-    <div class="row-fluid">
-            <div class="span2">
-          <div class="well sidebar-nav">
-            <ul class="nav nav-list">
-              <li class="nav-header">Sidebar</li>
-              <li><%= link_to(root_path, :class => 'btn') do %><i class="fa fa-home"> </i>  Home<% end %></li>
-              <li><p> </p></li>
-              <li><%= link_to(machines_path, :class => 'btn') do %><i class="fa fa-sitemap"> </i> Machines<% end %></li>
-              <li><p> </p></li>
-              <li><%= link_to(alarms_path, :class => 'btn') do %><i class="fa fa-bell"> </i> Alarms<% end %></li>
-              <li><p> </p></li>
-              <li><%= link_to(customers_path, :class => 'btn') do %><i class="fa fa-users"> </i> Customers<% end %></li>
-              <li><p> </p></li>
-              <li><%= link_to(grid_path, :class => 'btn') do %><i class="fa fa-th"> </i> Grid<% end %></li>
-            </ul>
-          </div><!--/.well -->
-        </div><!--/span-->
-        <div class="span10">
-          <%= bootstrap_flash %>
-          <%= yield %>
-        </div>
-
-    
-    </div>
-    <div class="row-fluid">
-        <div class="span12">
-           <div class="page-header">
-           </div>
-        </div>
-    </div>
-    <div class="row-fluid">
-       <div class="span6"><%= render 'layouts/footer' %></div>
-       <div class="span6"><%= render 'layouts/footer2' %></div>
-    </div>
-</div>    
-
-</div> <!-- /container -->
-
+  <div class="container-fluid">
+      <div class="row-fluid">
+          <% if user_signed_in? %>
+          <div class="span2">
+            <div class="well sidebar-nav">
+              <ul class="nav nav-list">
+                <li class="nav-header">Sidebar</li>
+                <li><%= link_to(root_path, :class => 'btn') do %><i class="fa fa-home"> </i>  Home<% end %></li>
+                <li><p> </p></li>
+                <li><%= link_to(machines_path, :class => 'btn') do %><i class="fa fa-sitemap"> </i> Machines<% end %></li>
+                <li><p> </p></li>
+                <li><%= link_to(alarms_path, :class => 'btn') do %><i class="fa fa-bell"> </i> Alarms<% end %></li>
+                <li><p> </p></li>
+                <li><%= link_to(customers_path, :class => 'btn') do %><i class="fa fa-users"> </i> Customers<% end %></li>
+                <li><p> </p></li>
+                <li><%= link_to(grid_path, :class => 'btn') do %><i class="fa fa-th"> </i> Grid<% end %></li>
+              </ul>
+            </div><!--/.well -->
+          </div><!--/span-->
+          <div class="span10">
+            <%= bootstrap_flash %>
+            <%= yield %>
+          </div><!--/span-->
+          <% end %>
+          <% if !user_signed_in? %>
+          <div class="row-fluid">
+            <div class="span4 offset3">
+              <%= yield %>
+            </div>
+            <div class="span4">
+            </div>
+          </div>
+          <% end %>
+      </div>
+      <div class="row-fluid">
+          <div class="span12">
+             <div class="page-header">
+             </div>
+          </div>
+      </div>
+      <div class="row-fluid">
+         <div class="span6"><%= render 'layouts/footer' %></div>
+         <div class="span6"><%= render 'layouts/footer2' %></div>
+      </div>
+  </div> <!-- /container -->
   </body>
 </html>

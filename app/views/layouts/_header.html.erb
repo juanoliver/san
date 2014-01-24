@@ -1,14 +1,21 @@
 <header>
-  <div class="container">    
-    <div class="navbar navbar-fluid-top navbar-inner container-fluid">
-          <a class="brand" href=<%= root_path %>><img src="/assets/iap_smartvending_logo.gif"></a>
-          <div class="container-fluid nav-collapse">
-            <ul class="nav pull-right">
-              <li><a class="btn" href="/path2"><i class="fa fa-file-o"></i> Profile</a></li>
-              <li><a class="btn" href=<%= help_path %>><i class="fa fa-trash-o"></i> Help</a></li>
-              <li><a class="btn" href="/path3"><i class="fa fa-spinner fa-spin"></i> Sign In</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-    </div>
+<nav class="navbar navbar-fluid-top navbar-inner" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <a class='navbar-brand' href=<%= root_path %>><img src="/assets/iap_smartvending_logo.gif"></a>
+    <ul class="nav navbar-nav navbar-right pull-right">
+      <li><a href=<%= help_path %>> Help</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <% if !user_signed_in? %><li><a  href=<%= new_user_session_path %>><i class="fa fa-sign-in"></i> Sign In</a></li><% end %>
+          <% if user_signed_in? %>
+             <li><a  href=<%= destroy_user_session_path(:method => 'delete') %>><i class="fa fa-sign-out"></i> Sign Out</a></li>
+             <li><a  href=<%= edit_user_registration_path %>><i class="fa fa-arrows-h"></i> Change Password</a></li>
+          <% end %>
+        </ul>
+      </li>
+    </ul>
   </div>
+</nav>
 </header>

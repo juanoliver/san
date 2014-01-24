@@ -2,6 +2,7 @@ source 'http://rubygems.org'
 
 gem 'rails', '4.0.0'
 gem 'turbolinks'
+gem 'devise'
 gem 'debugger', group: [:development, :test]
 
 # Bundle edge Rails instead:
