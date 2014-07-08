@@ -6,6 +6,8 @@
 <div class="row-fluid">
     <div class="span6">
       <p>Aquí va un mapa con las máquinas
+        <%= gmaps4rails(@json) %>
+        <%= yield :scripts %>
       </p>
     </div><!--/span-->
     <div class="span6">

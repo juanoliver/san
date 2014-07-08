@@ -4,9 +4,16 @@ class MachinesController < ApplicationController
   # GET /machines
   def index
     @machines = Machine.all
-    @json = @machines.to_a.to_gmaps4rails
-
+#    @json = @machines.to_gmaps4rails
+    @json = @machines.to_gmaps4rails do |machine, marker|
+            marker.infowindow render_to_string(:partial => "/machines/infowindow", :locals => { :machine => machine})
+            marker.title "FieldAgent #{machine.extID}"
+    end
+#            marker.picture({:picture => "http://mapicons.nicolasmollet.com/wp-content/uploads/mapicons/shape-default/color-3875d7/shapecolor-color/shadow-1/border-dark/symbolstyle-contrast/symbolshadowstyle-dark/gradient-iphone/information.png",
+ #           :width => 32,
+ #           :height => 32})
   end
+ 
 
   # GET /machines/1
   def show

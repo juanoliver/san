@@ -1,7 +1,7 @@
 class Machine < ActiveRecord::Base
-
-def gmaps4rails_address
+  acts_as_gmappable
+  def gmaps4rails_address
   "#{nombre_ciudad}, #{provincia}"
-end
+  end
 
 end

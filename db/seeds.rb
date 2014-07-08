@@ -26,7 +26,7 @@ end
 Machine.delete_all
 open("db/machines.csv") do |machines|
   machines.read.each_line do |machine|
-    id , name, description, category, status, nombre_ciudad, provincia  = machine.chomp.split(";")
+    id , name, description, status, category, nombre_ciudad, provincia  = machine.chomp.split(";")
     Machine.create!(:extID => id, :name => name, :description => description, :status => status,  :category => category, :nombre_ciudad => nombre_ciudad, :provincia => provincia)
   end
 end
