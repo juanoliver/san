@@ -4,6 +4,8 @@ class MachinesController < ApplicationController
   # GET /machines
   def index
     @machines = Machine.all
+    @json = @machines.to_a.to_gmaps4rails
+
   end
 
   # GET /machines/1

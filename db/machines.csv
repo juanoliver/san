@@ -1,12 +1,6 @@
-vending-emul-0001;vending.necta.model1.0001;Vending. Necta machine model 1 0001;vending.necta.model1;MONITORED
-vending-emul-0013;vending.azkoyen.sienna.0013;Vending. Azkoyen machine model sienna 0013;vending.azkoyen.sienna;MONITORED
-vending-emul-0001;vending.necta.model1.0001;Vending. Necta machine model 1 0001;vending.necta.model1;MONITORED
-vending-emul-0013;vending.azkoyen.sienna.0013;Vending. Azkoyen machine model sienna 0013;vending.azkoyen.sienna;MONITORED
-vending-emul-0001;vending.necta.model1.0001;Vending. Necta machine model 1 0001;vending.necta.model1;MONITORED
-vending-emul-0013;vending.azkoyen.sienna.0013;Vending. Azkoyen machine model sienna 0013;vending.azkoyen.sienna;MONITORED
-vending-emul-0001;vending.necta.model1.0001;Vending. Necta machine model 1 0001;vending.necta.model1;MONITORED
-vending-emul-0013;vending.azkoyen.sienna.0013;Vending. Azkoyen machine model sienna 0013;vending.azkoyen.sienna;MONITORED
-vending-emul-0001;vending.necta.model1.0001;Vending. Necta machine model 1 0001;vending.necta.model1;MONITORED
-vending-emul-0013;vending.azkoyen.sienna.0013;Vending. Azkoyen machine model sienna 0013;vending.azkoyen.sienna;MONITORED
-vending-emul-0001;vending.necta.model1.0001;Vending. Necta machine model 1 0001;vending.necta.model1;MONITORED
-vending-emul-0013;vending.azkoyen.sienna.0013;Vending. Azkoyen machine model sienna 0013;vending.azkoyen.sienna;MONITORED
+0001;vending.necta.model1.0001;Vending. Necta machine model 1 0001;vending.necta.model1;MONITORED;New York;NY
+0002;vending.azkoyen.sienna.0013;Vending. Azkoyen machine model sienna 0013;vending.azkoyen.sienna;MONITORED;Philadelphia;PA
+0001;vending.necta.model1.0001;Vending. Necta machine model 1 0001;vending.necta.model1;MONITORED;San Antonio;TX
+0013;vending.azkoyen.sienna.0013;Vending. Azkoyen machine model sienna 0013;vending.azkoyen.sienna;MONITORED;San Diego;CA
+0001;vending.necta.model1.0001;Vending. Necta machine model 1 0001;vending.necta.model1;MONITORED;Dallas;TX
+0013;vending.azkoyen.sienna.0013;Vending. Azkoyen machine model sienna 0013;vending.azkoyen.sienna;MONITORED;San Jose;CA

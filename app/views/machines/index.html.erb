@@ -4,11 +4,14 @@
 </div>
 
 <div class="row-fluid">
-    <div class="span3">
+    <div class="span12">
      <p>Aquí va un mapa con las máquinas
+        <%= gmaps4rails(@json) %>
      </p>
     </div><!--/span-->
-    <div class="span9">
+</div>
+<div class="row-fluid">
+    <div class="span12">
       <table class="table table-striped">
          <thead>
            <tr>
