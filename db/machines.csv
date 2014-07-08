@@ -1,12 +1,6 @@
-vending-emul-0001;vending.necta.model1.0001;Vending. Necta machine model 1 0001;vending.necta.model1;MONITORED
-vending-emul-0013;vending.azkoyen.sienna.0013;Vending. Azkoyen machine model sienna 0013;vending.azkoyen.sienna;MONITORED
-vending-emul-0001;vending.necta.model1.0001;Vending. Necta machine model 1 0001;vending.necta.model1;MONITORED
-vending-emul-0013;vending.azkoyen.sienna.0013;Vending. Azkoyen machine model sienna 0013;vending.azkoyen.sienna;MONITORED
-vending-emul-0001;vending.necta.model1.0001;Vending. Necta machine model 1 0001;vending.necta.model1;MONITORED
-vending-emul-0013;vending.azkoyen.sienna.0013;Vending. Azkoyen machine model sienna 0013;vending.azkoyen.sienna;MONITORED
-vending-emul-0001;vending.necta.model1.0001;Vending. Necta machine model 1 0001;vending.necta.model1;MONITORED
-vending-emul-0013;vending.azkoyen.sienna.0013;Vending. Azkoyen machine model sienna 0013;vending.azkoyen.sienna;MONITORED
-vending-emul-0001;vending.necta.model1.0001;Vending. Necta machine model 1 0001;vending.necta.model1;MONITORED
-vending-emul-0013;vending.azkoyen.sienna.0013;Vending. Azkoyen machine model sienna 0013;vending.azkoyen.sienna;MONITORED
-vending-emul-0001;vending.necta.model1.0001;Vending. Necta machine model 1 0001;vending.necta.model1;MONITORED
-vending-emul-0013;vending.azkoyen.sienna.0013;Vending. Azkoyen machine model sienna 0013;vending.azkoyen.sienna;MONITORED
+0001;vending.necta.model1.0001;Vending. Necta machine model 1 0001;MONITORED;vending.necta.model1;New York;NY
+0002;vending.necta.model1.0001;Vending. Necta machine model 1 0001;MONITORED;vending.necta.model1;Los Angeles;LA
+0003;vending.necta.model1.0001;Vending. Necta machine model 1 0001;MONITORED;vending.necta.model1;Chicago;IL
+0004;vending.necta.model1.0001;Vending. Necta machine model 1 0001;MONITORED;vending.necta.model1;Houston;TX
+0005;vending.necta.model1.0001;Vending. Necta machine model 1 0001;MONITORED;vending.necta.model1;Philadelphia;PA
+0006;vending.necta.model1.0001;Vending. Necta machine model 1 0001;MONITORED;vending.necta.model1;San Diego;CA

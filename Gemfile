@@ -4,6 +4,8 @@ gem 'rails', '4.0.0'
 gem 'turbolinks'
 gem 'devise'
 gem 'debugger', group: [:development, :test]
+gem 'gmaps4rails', '1.5.6'
+#gem 'gmaps4rails'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'

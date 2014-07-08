@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140117132159) do
+ActiveRecord::Schema.define(version: 20140708083849) do
 
   create_table "alarms", force: true do |t|
     t.integer  "extID"
@@ -41,6 +41,11 @@ ActiveRecord::Schema.define(version: 20140117132159) do
     t.string   "status"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.string   "nombre_ciudad"
+    t.string   "provincia"
+    t.boolean  "gmaps"
   end
 
   create_table "users", force: true do |t|
