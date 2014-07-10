@@ -17,6 +17,27 @@
             <div class="well sidebar-nav">
               <ul class="nav nav-list">
                 <li class="nav-header">Sidebar</li>
+                <li><a href=<%= root_path %>> Home </a>
+                </li>
+                <li><a href=<%= machines_path %>> Machines </a>
+                </li>
+                <li><a href=<%= alarms_path %>> Alarms </a>
+                </li>
+                <li><a href=<%= customers_path %>> Customers </a>
+                </li>
+                <li><a href=<%= grid_path %>> Grid </a>
+                </li>
+                <li class="dropdown">
+                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Gráficos <b class="caret"></b></a>
+
+                    <ul class="dropdown-menu" role="menu">
+                    <li><a href=<%= graphics_esolar_path %>> Energía solar y consumida </a></li>
+                    <li><a href=<%= graphics_psimulado_path %> > Precio Simulado </a></li>
+                    <li><a href=<%= graphics_hechos_path %>> Lista de Hechos </a></li>
+                    <li class="divider"></li>
+                    <li><a href=<%= graphics_eventos_path %>> Eventos en MyecoHouse </a></li>
+                   </ul>
+                </li>
                 <li><%= link_to(root_path, :class => 'btn') do %><i class="fa fa-home"> </i>  Home<% end %></li>
                 <li><p> </p></li>
                 <li><%= link_to(machines_path, :class => 'btn') do %><i class="fa fa-sitemap"> </i> Machines<% end %></li>
@@ -39,6 +60,7 @@
                </div>
               </ul>
             </div><!--/.well -->
+            <!-- Sidebar -->
           </div><!--/span-->
           <div class="span10">
             <%= render 'layouts/messages' %>
