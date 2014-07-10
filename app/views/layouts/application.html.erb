@@ -26,6 +26,17 @@
                 <li><%= link_to(customers_path, :class => 'btn') do %><i class="fa fa-users"> </i> Customers<% end %></li>
                 <li><p> </p></li>
                 <li><%= link_to(grid_path, :class => 'btn') do %><i class="fa fa-th"> </i> Grid<% end %></li>
+                <li><p> </p></li>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown"> Dropdown <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu">
+                    <li><a href=<%= graphics_esolar_path %>> Energía solar y consumida </a></li>
+                    <li><a href=<%= graphics_psimulado_path %> > Precio Simulado </a></li>
+                    <li><a href=<%= graphics_hechos_path %>> Lista de Hechos </a></li>
+                    <li class="divider"></li>
+                    <li><a href=<%= graphics_eventos_path %>> Eventos en MyecoHouse </a></li>
+                   </ul>
+               </div>
               </ul>
             </div><!--/.well -->
           </div><!--/span-->
