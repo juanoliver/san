@@ -1,0 +1,53 @@
+<div class="page-header">
+<h2>Conexión Transparente</h2>
+</div>
+<div class="page-header">
+<h3>Salida del comando get-fact-list ejecutado en el agente</h3>
+</div>
+<div class="row-fluid">
+    <div class="span12">
+     <p>
+        <div class="bs-docs-example">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Definición</th>
+                  <th>Respuesta</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><%= p @resp['about'] %><%= p ' :Comando get-fact-list' %> </td>
+                  <td><%= p @resp['response'] %> </td>
+                </tr>
+              </tbody>
+            </table>
+         </div>
+     </p>
+    </div><!--/span-->
+</div>
+<div class="page-header">
+<h3>Salida del comando get-defrule-list ejecutado en el agente</h3>
+</div>
+<div class="row-fluid">
+    <div class="span12">
+     <p>
+        <div class="bs-docs-example">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Definición</th>
+                  <th>Respuesta</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><%= p @resp2['about'] %><%= p ' :Comando get-defrule-list' %> </td>
+                  <td><%= p @resp2['response'] %> </td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+     </p>
+    </div><!--/span-->
+</div>

@@ -4,7 +4,6 @@ class MachinesController < ApplicationController
   # GET /machines
   def index
     @machines = Machine.all
-#    @json = @machines.to_gmaps4rails
     @json = @machines.to_gmaps4rails do |machine, marker|
             marker.infowindow render_to_string(:partial => "/machines/infowindow", :locals => { :machine => machine})
             marker.title "FieldAgent #{machine.extID}"

@@ -1,8 +1,7 @@
 SmartVending::Application.routes.draw do
   get "graphics/esolar"
+  get "graphics/cnxtrasp"
   get "graphics/psimulado"
-  get "graphics/hechos"
-  get "graphics/eventos"
   #devise_for :users
   devise_for :users, :skip => [:registrations]                                          
     as :user do
