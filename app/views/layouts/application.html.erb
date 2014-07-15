@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://www.google.com/jsapi'></script>
     <title><%= full_title(yield(:title)) %></title>
     <%= csrf_meta_tags %>
     <%= render 'layouts/shim' %>  
@@ -33,7 +34,7 @@
                     <ul class="dropdown-menu" role="menu">
                     <li><a href=<%= graphics_esolar_path %>> Energía solar y consumida </a></li>
                     <li><a href=<%= graphics_cnxtrasp_path %> > Conexión Transparente </a></li>
-                    <li><a href=<%= graphics_psimulado_path %>> Simulación Coste </a></li>
+                    <li><a href=<%= graphics_psimulado_path %>> Simulación Coste y Temperatura </a></li>
                     <li class="divider"></li>
                    </ul>
                 </li>
@@ -52,7 +53,7 @@
                     <ul class="dropdown-menu" role="menu">
                     <li><a href=<%= graphics_esolar_path %>> Energía solar y consumida </a></li>
                     <li><a href=<%= graphics_cnxtrasp_path %> > Conexión Transparent </a></li>
-                    <li><a href=<%= graphics_psimulado_path %>> Simulación Coste </a></li>
+                    <li><a href=<%= graphics_psimulado_path %>> Simulación Coste y Temperatura</a></li>
                     <li class="divider"></li>
                    </ul>
                </div>

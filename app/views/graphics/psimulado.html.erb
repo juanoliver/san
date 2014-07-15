@@ -1,13 +1,42 @@
 <!-- <%= javascript_include_tag "http://code.highcharts.com/highcharts.js", "chartkick" %> -->
 <!-- <%= javascript_include_tag "//www.google.com/jsapi", "chartkick" %> -->
 <div class="page-header">
-<h2>Graficos de simulación de coste de energía eléctrica consumida</h2>
+<h2>Coste simulado de la energía eléctrica consumida</h2>
 </div>
 <div class="row-fluid">
     <div class="span12">
      <p>
         <%= line_chart @resp['series'].map{|series|
                        {name: series, data: @resp['datos'][series] } }  %>
+     </p>
+    </div><!--/span-->
+</div>
+<div class="page-header">
+<h2>Temperatura medida por el FA</h2>
+</div>
+<div class="row-fluid">
+    <div class="span3">
+     <p>
+        <div id='chart1'></div>
+        <%= render_chart @resp2, 'chart1' %>
+     </p>
+    </div><!--/span-->
+    <div class="span3">
+     <p>
+        <div id='chart2'></div>
+        <%= render_chart @resp3, 'chart2' %>
+     </p>
+    </div><!--/span-->
+    <div class="span3">
+     <p>
+        <div id='chart3'></div>
+        <%= render_chart @resp4, 'chart3' %>
+     </p>
+    </div><!--/span-->
+    <div class="span3">
+     <p>
+        <div id='chart4'></div>
+        <%= render_chart @resp5, 'chart4' %>
      </p>
     </div><!--/span-->
 </div>

@@ -8,6 +8,7 @@ gem 'gmaps4rails', '1.5.6'
 #gem 'gmaps4rails'
 gem 'rest-client', '~> 1.7.1'
 gem 'chartkick', '~> 1.3.2'
+gem "google_visualr", ">= 2.1"
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
