@@ -17,7 +17,7 @@
           <div class="span2">
             <div class="well sidebar-nav">
               <ul class="nav nav-list">
-                <li class="nav-header">Sidebar</li>
+                <li class="nav-header"></li>
                 <li><a href=<%= root_path %>> Home </a>
                 </li>
                 <li><a href=<%= machines_path %>> Machines </a>
@@ -38,25 +38,6 @@
                     <li class="divider"></li>
                    </ul>
                 </li>
-                <li><%= link_to(root_path, :class => 'btn') do %><i class="fa fa-home"> </i>  Home<% end %></li>
-                <li><p> </p></li>
-                <li><%= link_to(machines_path, :class => 'btn') do %><i class="fa fa-sitemap"> </i> Machines<% end %></li>
-                <li><p> </p></li>
-                <li><%= link_to(alarms_path, :class => 'btn') do %><i class="fa fa-bell"> </i> Alarms<% end %></li>
-                <li><p> </p></li>
-                <li><%= link_to(customers_path, :class => 'btn') do %><i class="fa fa-users"> </i> Customers<% end %></li>
-                <li><p> </p></li>
-                <li><%= link_to(grid_path, :class => 'btn') do %><i class="fa fa-th"> </i> Grid<% end %></li>
-                <li><p> </p></li>
-                <div class="btn-group">
-                    <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown"> Dropdown <span class="caret"></span></button>
-                    <ul class="dropdown-menu" role="menu">
-                    <li><a href=<%= graphics_esolar_path %>> Energía solar y consumida </a></li>
-                    <li><a href=<%= graphics_cnxtrasp_path %> > Conexión Transparent </a></li>
-                    <li><a href=<%= graphics_psimulado_path %>> Simulación Coste y Temperatura</a></li>
-                    <li class="divider"></li>
-                   </ul>
-               </div>
               </ul>
             </div><!--/.well -->
             <!-- Sidebar -->
