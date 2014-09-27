@@ -4,14 +4,14 @@
   <div class="navbar-header">
     <a class='navbar-brand' href=<%= root_path %>><img src="/assets/iap_smartvending_logo.gif"></a>
     <ul class="nav navbar-nav navbar-right pull-right">
-      <li><a href=<%= help_path %>> Help</a></li>
+      <li><a href=<%= help_path %>> Help </a></li>
       <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User <b class="caret"></b></a>
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> User <b class="caret"></b></a>
         <ul class="dropdown-menu">
-          <% if !user_signed_in? %><li><a  href=<%= new_user_session_path %>><i class="fa fa-sign-in"></i> Sign In</a></li><% end %>
+          <% if !user_signed_in? %><li><a  href=<%= new_user_session_path %>><i class="fa fa-sign-in"></i> Sign in </a></li><% end %>
           <% if user_signed_in? %>
-             <li><a  href=<%= destroy_user_session_path(:method => 'delete') %>><i class="fa fa-sign-out"></i> Sign Out</a></li>
-             <li><a  href=<%= edit_user_registration_path %>><i class="fa fa-arrows-h"></i> Change Password</a></li>
+             <li><a  href=<%= destroy_user_session_path(:method => 'delete') %>><i class="fa fa-sign-out"></i> Sign out </a></li>
+             <li><a  href=<%= edit_user_registration_path %>><i class="fa fa-arrows-h"></i> Change Password </a></li>
           <% end %>
         </ul>
       </li>
