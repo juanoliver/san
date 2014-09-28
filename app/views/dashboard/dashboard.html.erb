@@ -7,15 +7,27 @@
     <div class="span6">
      <p>
         <h3>Active Alarms by Severity</h3>
-        <%= line_chart @resp['series'].map{|series|
-                       {name: series, data: @resp['datos'][series] } }  %>
+        <%= pie_chart @resp.group(:severity).count %>
      </p>
     </div><!--/span-->
     <div class="span6">
      <p>
         <h3>Monitored vs Not Monitored Devices</h3>
-        <%= line_chart @resp['series'].map{|series|
-                       {name: series, data: @resp['datos'][series] } }  %>
+        <%= column_chart @resp2.group(:status).count %>
+     </p>
+    </div><!--/span-->
+</div>
+<div class="row-fluid">
+    <div class="span6">
+     <p>
+        <h3>Devices by Category</h3>
+        <%= column_chart @resp2.group(:category).count %>
+     </p>
+    </div><!--/span-->
+    <div class="span6">
+     <p>
+        <h3>Devices by Province</h3>
+        <%= pie_chart @resp2.group(:provincia).count %>
      </p>
     </div><!--/span-->
 </div>
