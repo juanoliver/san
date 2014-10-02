@@ -1,4 +1,5 @@
 SmartVending::Application.routes.draw do
+  root  :to => 'dashboard#dashboard'
   get "graphics/esolar"
   get "graphics/cnxtrasp"
   get "graphics/psimulado"
@@ -17,7 +18,7 @@ SmartVending::Application.routes.draw do
   resources :customers
 
   # root  'static_pages#home'
-  root  'dashboard#dashboard'
+#  root  'dashboard#dashboard'
 #  root  :to => "home#index"
   match '/help',    to: 'static_pages#help',    via: 'get'
   match '/about',   to: 'static_pages#about',   via: 'get'
