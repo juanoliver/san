@@ -7,10 +7,12 @@ class MachinesController < ApplicationController
     @json = @machines.to_gmaps4rails do |machine, marker|
             marker.infowindow render_to_string(:partial => "/machines/infowindow", :locals => { :machine => machine})
             marker.title "FieldAgent #{machine.extID}"
+#    end
+            marker.picture({:picture => "/assets/powerplant.png",
+        :width => 32,
+        :height => 32})
+      #   marker.json({:title => machine.extID})
     end
-#            marker.picture({:picture => "http://mapicons.nicolasmollet.com/wp-content/uploads/mapicons/shape-default/color-3875d7/shapecolor-color/shadow-1/border-dark/symbolstyle-contrast/symbolshadowstyle-dark/gradient-iphone/information.png",
- #           :width => 32,
- #           :height => 32})
   end
  
 
