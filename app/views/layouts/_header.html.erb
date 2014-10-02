@@ -11,6 +11,7 @@
           <% if !user_signed_in? %><li><a  href=<%= new_user_session_path %>><i class="fa fa-sign-in"></i> Sign in </a></li><% end %>
           <% if user_signed_in? %>
              <li><a  href=<%= destroy_user_session_path %>><i class="fa fa-sign-out"></i> Sign out </a></li>
+             <li><a  href=<%= edit_user_registration_path %>><i class="fa fa-arrows-h"></i> Change Password </a></li>
           <% end %>
         </ul>
       </li>
