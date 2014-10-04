@@ -1,24 +1,24 @@
-3;ACT;1;10:47:43 26/12/2013;vending.azkoyen.sienna.0013;V;vending.accounting.dex
-4;ACT;2;10:47:43 26/12/2013;vending.necta.model1.0001;V;vending.accounting.dex
-5;ACT;3;10:47:43 26/12/2013;vending.azkoyen.sienna.0013;V;vending.accounting.serial
-6;ACT;4;10:47:43 26/12/2013;vending.necta.model1.0001;V;vending.accounting.serial
-1;ACT;4;10:47:23 26/12/2013;vending.azkoyen.sienna.0013;V;vending.monitoring
-2;ACT;2;10:47:23 26/12/2013;vending.necta.model1.0001;V;vending.monitoring
-3;ACT;3;10:47:43 26/12/2013;vending.azkoyen.sienna.0013;V;vending.accounting.dex
-4;ACT;1;10:47:43 26/12/2013;vending.necta.model1.0001;V;vending.accounting.dex
-5;ACT;4;10:47:43 26/12/2013;vending.azkoyen.sienna.0013;V;vending.accounting.serial
-6;ACT;3;10:47:43 26/12/2013;vending.necta.model1.0001;V;vending.accounting.serial
-1;ACT;4;10:47:23 26/12/2013;vending.azkoyen.sienna.0013;V;vending.monitoring
-2;ACT;2;10:47:23 26/12/2013;vending.necta.model1.0001;V;vending.monitoring
-3;ACT;1;10:47:43 26/12/2013;vending.azkoyen.sienna.0013;V;vending.accounting.dex
-4;ACT;4;10:47:43 26/12/2013;vending.necta.model1.0001;V;vending.accounting.dex
-5;ACT;3;10:47:43 26/12/2013;vending.azkoyen.sienna.0013;V;vending.accounting.serial
-6;ACT;4;10:47:43 26/12/2013;vending.necta.model1.0001;V;vending.accounting.serial
-1;ACT;4;10:47:23 26/12/2013;vending.azkoyen.sienna.0013;V;vending.monitoring
-2;ACT;4;10:47:23 26/12/2013;vending.necta.model1.0001;V;vending.monitoring
-3;ACT;3;10:47:43 26/12/2013;vending.azkoyen.sienna.0013;V;vending.accounting.dex
-4;ACT;3;10:47:43 26/12/2013;vending.necta.model1.0001;V;vending.accounting.dex
-5;ACT;4;10:47:43 26/12/2013;vending.azkoyen.sienna.0013;V;vending.accounting.serial
-6;ACT;4;10:47:43 26/12/2013;vending.necta.model1.0001;V;vending.accounting.serial
-1;ACT;4;10:47:23 26/12/2013;vending.azkoyen.sienna.0013;V;vending.monitoring
-2;ACT;4;10:47:23 26/12/2013;vending.necta.model1.0001;V;vending.monitoring
+6;ACT;4;2013-12-29;vending.necta.model1.0001;V;vending
+6;ACT;3;2014-01-04;vending.necta.model1.0001;V;vending
+6;ACT;4;2014-01-10;vending.necta.model1.0001;V;vending
+6;ACT;4;2014-01-16;vending.necta.model1.0001;V;vending
+3;ACT;1;2013-12-26;vending.azkoyen.sienna.0013;V;vending
+3;ACT;3;2014-01-01;vending.azkoyen.sienna.0013;V;vending
+3;ACT;1;2014-01-07;vending.azkoyen.sienna.0013;V;vending
+3;ACT;3;2014-01-13;vending.azkoyen.sienna.0013;V;vending
+4;ACT;2;2013-12-27;solar.1.0001;V;solar
+4;ACT;1;2014-01-02;solar.1.0002;V;solar
+4;ACT;4;2014-01-08;solar.1.0003;V;solar
+4;ACT;3;2014-01-14;solar.1.0004;V;solar
+1;ACT;4;2013-12-30;solar.1.0005;V;solar
+1;ACT;4;2014-01-05;solar.1.0006;V;solar
+1;ACT;4;2014-01-11;solar.1.0007;V;solar
+1;ACT;4;2014-01-17;solar.1.0008;V;solar
+5;ACT;3;2013-12-28;recycle.0013;V;recycle
+5;ACT;4;2014-01-03;recycle.0014;V;recycle
+5;ACT;3;2014-01-09;recycle.0015;V;recycle
+5;ACT;4;2014-01-15;recycle.0016;V;recycle
+2;ACT;2;2013-12-31;recycle.0017;V;recycle
+2;ACT;2;2014-01-06;recycle.0018;V;recycle
+2;ACT;4;2014-01-12;recycle.0019;V;recycle
+2;ACT;4;2014-01-18;recycle.0020;V;recycle

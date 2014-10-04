@@ -1,9 +1,11 @@
-0001;vending.necta.model1.0001;Vending. Necta machine model 1 0001;MONITORED;vending;San Fernando de Henares;Madrid
-0002;energy efficiency.solar panel;energy efficiency. solar panel;MONITORED;solar panel;Torrejon de Ardoz;Madrid
-0003;energy efficiency.solar panel;energy efficiency. solar panel;MONITORED;solar panel;Alovera;Guadalajara
-0004;vending.azkoyen.model231;Vending. Azkoyen machine model231;MONITORED;vending;Granollers;Barcelona
-0005;vending.Jofemar.model453;Vending. Jofemar machine model453;MONITORED;vending;Torello;Barcelona
-0006;vending.necta.model1.0001;Vending. Necta machine model 1 0001;MONITORED;vending;Aiguafreda;Barcelona
-0007;vending.necta.model1.0001;Vending. Necta machine model 1 0001;NOT MONITORED;vending;Madrid;Madrid
-0008;vending.necta.model1.0001;Vending. Necta machine model 1 0001;NOT MONITORED;vending;Cuarte;Huesca
-0009;vending.necta.model1.0001;Vending. Necta machine model 1 0001;NOT MONITORED;vending;Valencia;Valencia
+1;vending.necta.model1.0001;Vending. Necta machine model 1 0001;MONITORED;vending;San Fernando de Henares;Madrid
+2;energy efficiency.solar panel;energy efficiency. solar panel;MONITORED;solar;Torrejon de Ardoz;Madrid
+3;energy efficiency.solar panel;energy efficiency. solar panel;MONITORED;solar;Alovera;Guadalajara
+4;vending.azkoyen.model231;Vending. Azkoyen machine model231;MONITORED;vending;Granollers;Barcelona
+5;vending.Jofemar.model453;Vending. Jofemar machine model453;MONITORED;vending;Torello;Barcelona
+6;vending.necta.model1.0001;Vending. Necta machine model 1 0001;MONITORED;vending;Aiguafreda;Barcelona
+7;vending.necta.model1.0001;Vending. Necta machine model 1 0001;NOT MONITORED;vending;Madrid;Madrid
+8;vending.necta.model1.0001;Vending. Necta machine model 1 0001;NOT MONITORED;vending;Cuarte;Huesca
+9;vending.necta.model1.0001;Vending. Necta machine model 1 0001;NOT MONITORED;vending;Valencia;Valencia
+10;recycle.model1.0001;Recycle. Machine model 1 0001;NOT MONITORED;recycle;Armilla;Granada
+11;recycle.model1.0002;Recycle. Machine model 1 0002;NOT MONITORED;recycle;Agreda;Soria

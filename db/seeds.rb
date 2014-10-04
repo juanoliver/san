@@ -15,14 +15,6 @@ open("db/customers.csv") do |customers|
   end
 end
 
-Alarm.delete_all
-open("db/alarms.csv") do |alarms|
-  alarms.read.each_line do |alarm|
-    id , status, severity, date, object, category, type = alarm.chomp.split(";")
-    Alarm.create!(:extID => id, :status => status , :severity => severity, :date => date, :object => object,  :category => category, :tipe => type)
-  end
-end
-
 Machine.delete_all
 open("db/machines.csv") do |machines|
   machines.read.each_line do |machine|
@@ -30,4 +22,15 @@ open("db/machines.csv") do |machines|
     Machine.create!(:extID => id, :name => name, :description => description, :status => status,  :category => category, :nombre_ciudad => nombre_ciudad, :provincia => provincia)
   end
 end
+
+Alarm.delete_all
+open("db/alarms.csv") do |alarms|
+  alarms.read.each_line do |alarm|
+    id , status, severity, date, object, category, type = alarm.chomp.split(";")
+    a = Alarm.create!(:extID => id, :status => status , :severity => severity, :date => date, :object => object,  :category => category, :tipe => type)
+    b = Machine.where(category: a.tipe).take!
+    b.alarms << a
+  end
+end
+
 

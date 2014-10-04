@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140708083849) do
+ActiveRecord::Schema.define(version: 20141004174509) do
 
   create_table "alarms", force: true do |t|
     t.integer  "extID"
@@ -23,7 +23,10 @@ ActiveRecord::Schema.define(version: 20140708083849) do
     t.string   "tipe"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "machine_id"
   end
+
+  add_index "alarms", ["machine_id"], name: "index_alarms_on_machine_id"
 
   create_table "customers", force: true do |t|
     t.string   "name"
