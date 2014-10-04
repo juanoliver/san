@@ -17,14 +17,21 @@ class MachinesController < ApplicationController
   end
  
   def icono_de(machine)
-    severidad = "-v"
     icon = "/assets/"
     if machine.category == 'vending' then
        tipo_de_icono = "market"
-    elsif machine.category == 'solar panel' then
+    elsif machine.category == 'solar' then
        tipo_de_icono = "solarenergy"
     elsif machine.category == 'recycle' then
        tipo_de_icono = "recycle"
+    end
+    severidad = "-v"
+    machine.alarms.each do |al|
+        if al.severity == '2' or al.severity == '3' then
+           severidad = "-a"
+        elsif al.severity == '4' then
+           severidad = "-r"
+        end
     end
     icon << tipo_de_icono << severidad << ".png"
   end

@@ -28,8 +28,19 @@ open("db/alarms.csv") do |alarms|
   alarms.read.each_line do |alarm|
     id , status, severity, date, object, category, type = alarm.chomp.split(";")
     a = Alarm.create!(:extID => id, :status => status , :severity => severity, :date => date, :object => object,  :category => category, :tipe => type)
-    b = Machine.where(category: a.tipe).take!
-    b.alarms << a
+    b = Machine.where(category: a.tipe).take(20)
+    asignado = nil
+    b.each do |mch|
+     if mch.alarms.size==0 then
+        mch.alarms << a
+        asignado = true
+        break if asignado
+     end
+    end
+    if (!asignado) then
+      b = Machine.where(category: a.tipe).take!
+      b.alarms << a
+    end
   end
 end
 
