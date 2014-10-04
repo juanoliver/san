@@ -3,7 +3,11 @@ class AlarmsController < ApplicationController
 
   # GET /alarms
   def index
-    @alarms = Alarm.all
+    if params[:id] == nil then
+       @alarms = Alarm.all
+    else
+       @alarms = Machine.find(params[:id]).alarms
+    end
   end
 
   # GET /alarms/1

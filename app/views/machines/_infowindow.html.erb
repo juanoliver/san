@@ -1,2 +1,9 @@
-<h1><%= machine.name %></h1>
-<h2>status: <%= machine.status %></h2>
+<h3><%= machine.name %></h3>
+<h4>status: <%= machine.status %></h4>
+<div class="well sidebar-nav">
+   <ul class="nav nav-list">
+      <li class="nav-header"></li>
+      <li><a href=<%= alarms_from_path(machine.id) %>> Alarms </a>
+      </li>
+   </ul>
+</div><!--/.well -->
