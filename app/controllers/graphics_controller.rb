@@ -19,7 +19,38 @@ attr_accessor :resp2
       # Procesamos primero las series y dejamos los datos vacíos 
       # Las series tipo tiempo no se procesan, solo se usan de etiquetas
       a['meta']['legend'].map do |s|  
-        if (s !='time') then 
+        if (s !='time' and s !='precio') then 
+            if (s=='consumo') then
+               s = 'consumed'
+            end
+            ser << s 
+            d[s]= {} 
+        end
+        c['series'] = ser
+        c['datos'] = d
+      end
+
+      # Procesamos ahora las series de datos metemos precio, luego production
+      # y luego consumo
+      a['data'].map do |dat|
+        time = Time.at(dat[0])
+        c['datos']['production'][time]=dat[2]
+        c['datos']['consumed'][time]=dat[3]
+      end
+      # devolvemos la estructura en un dato del objeto para que la vista 
+      # la tenga accesible
+      @resp = c
+      # Creamos tres estructuras vacías
+      c = {}
+      d = {}
+      ser = []
+      # Procesamos primero las series y dejamos los datos vacíos 
+      # Las series tipo tiempo no se procesan, solo se usan de etiquetas
+      a['meta']['legend'].map do |s|  
+        if (s !='production' and s !='consumo' and s !='time') then 
+           if (s=='precio') then
+               s = 'cost'
+           end
            ser << s 
            d[s]= {} 
         end
@@ -31,13 +62,10 @@ attr_accessor :resp2
       # y luego consumo
       a['data'].map do |dat|
         time = Time.at(dat[0])
-        c['datos']['precio'][time]=dat[1]
-        c['datos']['production'][time]=dat[2]
-        c['datos']['consumo'][time]=dat[3]
+        c['datos']['cost'][time]=dat[1]
       end
       # devolvemos la estructura en un dato del objeto para que la vista 
-      # la tenga accesible
-      @resp = c
+      @resp2 = c
   end
 
   def cnxtrasp
@@ -64,6 +92,9 @@ attr_accessor :resp2
       # Las series tipo tiempo no se procesan, solo se usan de etiquetas
       a['meta']['legend'].map do |s|  
         if (s !='time') then 
+           if (s=='fac') then
+               s = 'invoiced'
+           end
            ser << s 
            d[s]= {} 
         end
@@ -74,7 +105,7 @@ attr_accessor :resp2
       # y luego consumo
       a['data'].map do |dat|
         time = Time.at(dat[0])
-        c['datos']['fac'][time]=dat[1]
+        c['datos']['invoiced'][time]=dat[1]
       end
       # devolvemos la estructura en un dato del objeto para que la vista 
       # la tenga accesible

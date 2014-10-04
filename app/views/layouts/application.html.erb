@@ -11,6 +11,7 @@
   </head>
   <body>
     <%= render 'layouts/header' %>  
+    <%= javascript_include_tag "http://code.highcharts.com/highcharts.js", "chartkick" %> 
   <div class="container-fluid">
       <div class="row-fluid">
           <% if user_signed_in? %>
