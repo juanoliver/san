@@ -6,16 +6,28 @@ class MachinesController < ApplicationController
     @machines = Machine.all
     @json = @machines.to_gmaps4rails do |machine, marker|
             marker.infowindow render_to_string(:partial => "/machines/infowindow", :locals => { :machine => machine})
-            marker.title "FieldAgent #{machine.extID}"
+            marker.title "#{machine.category} FieldAgent #{machine.extID}"
 #    end
-            marker.picture({:picture => "/assets/powerplant.png",
+            #marker.picture({:picture => "/assets/powerplant.png",
+            marker.picture({:picture => icono_de(machine),
         :width => 32,
         :height => 32})
       #   marker.json({:title => machine.extID})
     end
   end
  
-
+  def icono_de(machine)
+    severidad = "-v"
+    icon = "/assets/"
+    if machine.category == 'vending' then
+       tipo_de_icono = "market"
+    elsif machine.category == 'solar panel' then
+       tipo_de_icono = "solarenergy"
+    elsif machine.category == 'recycle' then
+       tipo_de_icono = "recycle"
+    end
+    icon << tipo_de_icono << severidad << ".png"
+  end
   # GET /machines/1
   def show
   end

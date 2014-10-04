@@ -1,9 +1,9 @@
-0001;vending.necta.model1.0001;Vending. Necta machine model 1 0001;MONITORED;vending.necta.model1;San Fernando de Henares;Madrid
-0002;vending.zumex.model12.0034;Vending. Zumex machine model 12 0034;MONITORED;vending.zumex.model12;Torrejon de Ardoz;Madrid
-0003;energy efficiency.solar panel;energy efficiency. solar panel;MONITORED;energy efficiency solar panel;Alovera;Guadalajara
-0004;vending.azkoyen.model231;Vending. Azkoyen machine model231;MONITORED;vending.Azkoyen;Granollers;Barcelona
-0005;vending.Jofemar.model453;Vending. Jofemar machine model453;MONITORED;vending.Jofemar.model453;Torello;Barcelona
-0006;vending.necta.model1.0001;Vending. Necta machine model 1 0001;MONITORED;vending.necta.model1;Aiguafreda;Barcelona
-0007;vending.necta.model1.0001;Vending. Necta machine model 1 0001;NOT MONITORED;vending.necta.model1;Madrid;Madrid
-0008;vending.necta.model1.0001;Vending. Necta machine model 1 0001;NOT MONITORED;vending.necta.model1;Cuarte;Huesca
-0009;vending.necta.model1.0001;Vending. Necta machine model 1 0001;NOT MONITORED;vending.necta.model1;Valencia;Valencia
+0001;vending.necta.model1.0001;Vending. Necta machine model 1 0001;MONITORED;vending;San Fernando de Henares;Madrid
+0002;energy efficiency.solar panel;energy efficiency. solar panel;MONITORED;solar panel;Torrejon de Ardoz;Madrid
+0003;energy efficiency.solar panel;energy efficiency. solar panel;MONITORED;solar panel;Alovera;Guadalajara
+0004;vending.azkoyen.model231;Vending. Azkoyen machine model231;MONITORED;vending;Granollers;Barcelona
+0005;vending.Jofemar.model453;Vending. Jofemar machine model453;MONITORED;vending;Torello;Barcelona
+0006;vending.necta.model1.0001;Vending. Necta machine model 1 0001;MONITORED;vending;Aiguafreda;Barcelona
+0007;vending.necta.model1.0001;Vending. Necta machine model 1 0001;NOT MONITORED;vending;Madrid;Madrid
+0008;vending.necta.model1.0001;Vending. Necta machine model 1 0001;NOT MONITORED;vending;Cuarte;Huesca
+0009;vending.necta.model1.0001;Vending. Necta machine model 1 0001;NOT MONITORED;vending;Valencia;Valencia
